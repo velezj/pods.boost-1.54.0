@@ -1,0 +1,6 @@
+Name: boost-1.54.0-iostreams
+Description: Boost IOStreams (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_iostreams
+Cflags: -I${prefix}/include -L${prefix}/lib

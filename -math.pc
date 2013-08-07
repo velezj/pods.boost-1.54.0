@@ -1,0 +1,6 @@
+Name: boost-1.54.0-math
+Description: Boost Math (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_math
+Cflags: -I${prefix}/include -L${prefix}/lib

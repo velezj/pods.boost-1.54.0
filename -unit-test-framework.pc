@@ -1,0 +1,6 @@
+Name: boost-1.54.0-unit-test-framework
+Description: Boost Unit Test Framework (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_unit_test_framework
+Cflags: -I${prefix}/include -L${prefix}/lib

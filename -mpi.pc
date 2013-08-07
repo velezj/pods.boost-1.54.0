@@ -1,0 +1,6 @@
+Name: boost-1.54.0-mpi
+Description: Boost MPI (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_mpi
+Cflags: -I${prefix}/include -L${prefix}/lib

@@ -1,0 +1,6 @@
+Name: boost-1.54.0-graph
+Description: Boost Graph (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_graph
+Cflags: -I${prefix}/include -L${prefix}/lib

@@ -1,0 +1,6 @@
+Name: boost-1.54.0-python
+Description: Boost Python (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_python
+Cflags: -I${prefix}/include -L${prefix}/lib

@@ -1,0 +1,6 @@
+Name: boost-1.54.0-graph-parallel
+Description: Boost Graph Parallel (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_graph_parallel
+Cflags: -I${prefix}/include -L${prefix}/lib

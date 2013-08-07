@@ -1,0 +1,6 @@
+Name: boost-1.54.0-filesystem
+Description: Boost Filesystem (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_filesystem
+Cflags: -I${prefix}/include -L${prefix}/lib
