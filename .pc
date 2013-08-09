@@ -1,0 +1,7 @@
+Name: boost-1.54.0
+Description: Boost [Headers] (1.54.0)
+Requires:
+Version: 1.54.0
+Libs:
+Cflags: -I${prefix}/include
+
