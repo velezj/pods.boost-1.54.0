@@ -1,0 +1,6 @@
+Name: boost-1.54.0-log
+Description: Boost Date Log (and Log-Setup) (1.54.0)
+Requires:
+Version: 1.54.0
+Libs: -lboost_log -lboost_log_setup
+Cflags: -I${prefix}/include -L${prefix}/lib
