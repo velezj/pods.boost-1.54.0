@@ -70,7 +70,7 @@ boost-make:
 
 	@echo "\n Installing Boost libraries \n"
 
-	cd boost_1_54_0/ && ./b2 install
+	cd boost_1_54_0/ && ./b2 --build-type=minimal -q install
 
 boost-made-success.touch: boost-untar-success.touch
 
