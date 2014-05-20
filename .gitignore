@@ -1,0 +1,4 @@
+pod-build/
+*.touch
+boost_1_54_0/
+boost-1.54.0.tar.gz
