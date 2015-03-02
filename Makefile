@@ -24,7 +24,8 @@ BUILD_TYPE="Release"
 endif
 
 all: pod-build/Makefile
-	$(MAKE) -C pod-build all install
+	#$(MAKE) -C pod-build all install
+	$(MAKE) boost-make
 
 pod-build/Makefile:
 	$(MAKE) configure
@@ -37,8 +38,8 @@ configure: boost-pkgconfig
 	@mkdir -p pod-build
 
 	# run CMake to generate and configure the build scripts
-	@cd pod-build && cmake -DCMAKE_INSTALL_PREFIX=$(BUILD_PREFIX) \
-		   -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) ..
+	#@cd pod-build && cmake -DCMAKE_INSTALL_PREFIX=$(BUILD_PREFIX) \
+	#	   -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) ..
 
 boost-downloaded-success.touch:
 	$(MAKE) boost-fetch
@@ -70,7 +71,8 @@ boost-make:
 
 	@echo "\n Installing Boost libraries \n"
 
-	cd boost_1_54_0/ && ./b2 --build-type=minimal -q install
+	#cd boost_1_54_0/ && ./b2 --build-type=minimal -q install
+	cd boost_1_54_0/ && ./b2 --build-type=minimal --with-system --with-chrono --with-thread --with-filesystem --with-date_time --with-regex -q install
 
 boost-made-success.touch: boost-untar-success.touch
 
